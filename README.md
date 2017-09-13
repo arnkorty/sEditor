@@ -1,4 +1,4 @@
-seditor
+sEditor
 =================
 
 A tiny, simple, no javascript dependencies WYSIWYG rich text editor based on the browser function execCommand.
@@ -10,7 +10,7 @@ Development is active, and ongoing.
 Features
 -----------
 
-* Allows a custom built toolbar with no magic markup generators enabling the web site to use all the goodness of Bootstrap
+* Allows a custom built toolbar 
 * Does not force any styling - it's all up to you
 * Uses standard browser features, no magic non-standard code, toolbar and keyboard configurable to execute any supported [browser command](https://developer.mozilla.org/en/docs/Rich-Text_Editing_in_Mozilla)
 * Does not create a separate frame, backup text areas etc - instead keeps it simple and runs everything inline in a DIV

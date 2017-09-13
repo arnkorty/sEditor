@@ -16,6 +16,9 @@
     wrapper.classList.add('seditor-wrapper');
     toolWrapper.classList.add('seditor-toolbar');
 
+    if (editor.clientWidth && editor.clientWidth > 200) {
+      wrapper.style.width = editor.clientWidth + 'px';
+    }
     var richer = this;
 
     this.selectedRange = null;
