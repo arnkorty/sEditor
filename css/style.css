@@ -1,0 +1,95 @@
+/* this CSS is not part of the widget, it is here just as an example of the demo page styling.... Don't copy this one, roll your own. One
+ * of the key things about the widget is that it allows you to do your own styling!
+ */
+
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css');
+.seditor-content{
+    background: white;
+    min-height: 200px;
+    border-radius: 3px;
+    padding: 4px;
+    border-collapse: separate;
+ 	box-sizing: content-box;
+ 	-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0 1px 1px 0 inset;
+ 	box-shadow: rgba(0, 0, 0, 0.0745098) 0 1px 1px 0 inset;
+    overflow: scroll;
+    outline: none;
+}
+.seditor-content:focus{
+    border-color:rgba(82, 168, 236, 0.8);
+    outline:0;
+    outline:thin dotted \9;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    -moz-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+}
+.seditor-content[contentEditable=true]:empty:not(:focus):before {
+	content:attr(data-placeholder)
+}
+
+
+.seditor-wrapper .seditor-toolbar {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    padding: 10px 0;
+}
+.seditor-btn-group {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 2px;
+    border: 1px solid #ececec;
+}
+.seditor-btn-group .seditor-btn.btn-active {
+    background: #ececec;
+}
+.seditor-btn-group .seditor-btn {
+    margin-right: 4px;
+    padding: 1px 5px;
+}
+.seditor-dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 1000;
+    background: white;
+    border: 1px solid #cecece;
+    list-style: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 130px;
+}
+div.seditor-dropdown-menu{
+    top: 25px;
+}
+
+.seditor-dropdown-menu p{
+    margin: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+.seditor-dropdown-menu a{
+    display: inline-block;
+    width: 100%;
+}
+.seditor-dropdown-menu.show {
+    display: block;
+}
+.seditor-toolbar .dropdown-menu a {
+	cursor: pointer;
+}
+
+.seditor-content .placeholderText {
+	color: #777;
+}
+
+.seditor-btn-group .imgUpload
+{
+	width: 0;
+	height: 0;
+	position:absolute
+}
