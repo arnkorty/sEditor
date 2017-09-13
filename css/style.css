@@ -33,7 +33,7 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-    padding: 10px 0;
+    padding: 10px 0 5px 0;
 }
 .seditor-btn-group {
     display: inline-block;
@@ -42,6 +42,7 @@
     margin-right: 5px;
     border-radius: 2px;
     border: 1px solid #ececec;
+    margin-bottom: 5px;
 }
 .seditor-btn-group .seditor-btn.btn-active {
     background: #ececec;
@@ -92,4 +93,7 @@ div.seditor-dropdown-menu{
 	width: 0;
 	height: 0;
 	position:absolute
+}
+.seditor-btn-title {
+    padding: 0 5px;
 }

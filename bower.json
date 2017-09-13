@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap-wysiwyg",
-  "description": "A tiny Bootstrap and jQuery based WYSIWYG rich text editor based on the browser function execCommand.",
-  "version": "1.0.4",
+  "name": "seditor",
+  "description": "tiny, no js dependencies, just dependencies fontawesome(icons) WYSIWYG rich text editor based on the browser function execCommand.",
+  "version": "0.0.1",
   "keywords": [
     "css",
     "js",
@@ -9,11 +9,13 @@
     "front-end",
     "web",
     "wysiwyg",
-    "editor"
+    "editor",
+    "seditor"
   ],
-  "homepage": "https://github.com/steveathon/bootstrap-wysiwyg",
+  "homepage": "https://github.com/arnkorty/seditor",
   "main": [
-    "js/bootstrap-wysiwyg.min.js"
+    "js/seditor.min.js",
+    "css/style.css"
   ],
   "ignore": [
     ".*",
@@ -24,10 +26,5 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "jquery": "~2.1.4",
-    "jquery.hotkeys": "https://github.com/jeresig/jquery.hotkeys.git#master",
-    "fontawesome": "~4.5.0",
-    "bootstrap": "~3.3.5",
-    "google-code-prettify": "~1.0.4"
   }
 }
