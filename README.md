@@ -49,7 +49,22 @@ How to start
 <div class='editor'></div>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    sEditor('.editor');
+    sEditor('.editor', {
+      file: {
+        // file upload error callback
+        error: function(reason, detail){
+        },
+        // file upload remote
+        // @params
+        //    file: File
+        //    callback: callback(image_url)
+        uploader: function(file, callback) {
+          uploadToRemote(file).success(function(data){
+            callback(data.url);
+          })
+        }
+      }
+    });
   })
 </script>
 ```
