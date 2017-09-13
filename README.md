@@ -3,7 +3,7 @@ seditor
 
 A tiny, simple, no javascript dependencies WYSIWYG rich text editor based on the browser function execCommand.
 
-This project inspired bootstrap-wysihtml(https://github.com/steveathon/bootstrap-wysiwyg). 
+This project inspired [bootstrap-wysihtml](https://github.com/steveathon/bootstrap-wysiwyg). 
 
 Development is active, and ongoing.
 
@@ -40,3 +40,16 @@ For the content attachment editor on MindMup, we apply the following rules to mo
 Dependencies
 ------------
 * [Font Awesome, just for icons](http://fontawesome.io/)
+
+How to start
+------------
+```html
+<script src="js/seditor.min.js"></script>
+<link href="css/style.css" rel="stylesheet" />
+<div class='editor'></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    sEditor('.editor');
+  })
+</script>
+```
