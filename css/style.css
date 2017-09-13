@@ -57,7 +57,7 @@
 .seditor-dropdown-menu{
     display: none;
     position: absolute;
-    top: 5px;
+    top: 30px;
     left: 0px;
     z-index: 1000;
     background: white;
@@ -94,11 +94,34 @@ div.seditor-dropdown-menu{
 .seditor-btn-group label{
     margin: 0;
 }
+.seditor-dropdown-menu input {
+    width: 100%;
+    border-radius: 2px;
+    outline: 0;
+    border: 1px solid #9e9e9e;
+    padding: 2px;
+    height: 24px;
+    line-height: 24px;
+}
+.seditor-dropdown-menu .seditor-btn-createlink{
+    float: right;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 2px;
+    border: 1px solid #9e9e9e;
+    background: #eee;
+}
 .seditor-btn-group .imgUpload
 {
 	width: 0;
 	height: 0;
 	position:absolute
+}
+.seditor-btn-group a,.seditor-btn-group a:focus,.seditor-btn-group a:hover{
+    text-decoration: none;
+}
+.seditor-btn-group a{
+    color: black;
 }
 .seditor-btn-title {
     padding: 0 5px;
