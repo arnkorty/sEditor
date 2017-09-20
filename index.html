@@ -50,9 +50,27 @@
       <div class="col-sm-6">
         <h2>Usage</h2>
         <p>
-          <pre class="prettyprint linenums">sEditor('.editor')</pre>
+          <pre class="prettyprint linenums">
+// base
+sEditor('.editor')
+
+
+// upload image to server
+sEditor('.editor', {file: {
+  // fileInfo as File Object
+  // callback(remote_image_url) for rich editor image callback
+  uploader: function(fileInfo, callback) {
+    var fReader = new FileReader();
+    fReader.onload = function(e) {
+      $.post('/uploader', {file: e.target.result}, success: function(data){
+        callback(data.url);
+      })
+    };
+    fReader.readAsDataURL(fileInfo);
+  }
+}})
+          </pre>
         </p>
-				<h2>Examples</h2>
       </div>
     </div>
   </div>
